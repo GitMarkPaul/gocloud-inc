@@ -7,6 +7,4 @@
     @each $color, $value in $theme-colors {
         --#{$variable-prefix}#{$color}: #{$value};
     }
-
-    --body-font-family: 'Open sans', sans-serif;
 }

@@ -18,7 +18,7 @@
     }
 
     .brand {
-        font-family: $font-family-extra-bold-sans-serif;
+        font-weight: 700;
         font-size: 26px;
         img {
             width: 50px;
@@ -46,7 +46,7 @@
 
         .navbar-item {
             position: relative;
-            font-family: $font-family-medium-sans-serif;
+            font-weight: 500;
             font-size: 16px;
 
             @media (max-width: 576px) {

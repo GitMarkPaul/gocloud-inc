@@ -69,12 +69,7 @@ $body-color:    $black !default;
 
 // Typography
 
-$font-family-sans-serif:        'Inter Regular', sans-serif !default;
-$font-family-light-sans-serif:        'Inter Light', sans-serif !default;
-$font-family-medium-sans-serif:        'Inter Medium', sans-serif !default;
-$font-family-semi-bold-sans-serif:        'Inter Semi Bold', sans-serif !default;
-$font-family-bold-sans-serif:        'Inter Bold', sans-serif !default;
-$font-family-extra-bold-sans-serif:        'Inter Extra Bold', sans-serif !default;
+$font-family-sans-serif:        'Inter', sans-serif !default;
 
 // Font, line-height
 
@@ -146,35 +141,3 @@ $variable-prefix:               cx- !default;
 // Options
 
 $enable-button-pointers:        true !default;
-
-// Fonts
-
-@font-face {
-    font-family: 'Inter Regular';
-    src: url('../../fonts/Inter-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Inter Light';
-    src: url('../../fonts/Inter-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Inter Medium';
-    src: url('../../fonts/Inter-Medium.ttf');
-}
-
-@font-face {
-    font-family: 'Inter Semi Bold';
-    src: url('../../fonts/Inter-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'Inter Bold';
-    src: url('../../fonts/Inter-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Inter Extra Bold';
-    src: url('../../fonts/Inter-ExtraBold.ttf');
-}
