@@ -1,0 +1,82 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    font-family: $font-family-sans-serif;
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    border: none;
+    border-radius: $btn-border-radius;
+    box-shadow: $btn-box-shadow;
+    padding: $btn-padding-default;
+    line-height: 1.2;
+    user-select: none;
+    cursor: if($enable-button-pointers, pointer, null);
+    position: relative;
+    overflow: hidden;
+    transition: all .2s ease-in-out; 
+
+    &:disabled {
+        opacity: 0.65;
+    }
+
+    &:active {
+        transform: scale(1.03);
+    }
+}
+
+// Button Sizes
+
+.lg {
+    font-size: 21px;
+    padding: $btn-padding-lg;
+}
+
+.md {
+    padding: $btn-padding-md;
+}
+
+.sm {
+    padding: $btn-padding-sm;
+}
+
+// Shape
+
+.round {
+    border-radius: $btn-rounded;
+}
+
+// Block
+
+.block {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .block-m {
+        width: 100%;
+    }
+}
+
+// Outline
+.outline-primary {
+    background-color: transparent;
+    border: 1px solid var(--#{$variable-prefix}primary);
+}
+
+.outline-success {
+    background-color: transparent;
+    border: 1px solid var(--#{$variable-prefix}success);
+}
+
+.outline-warning {
+    background-color: transparent;
+    border: 1px solid var(--#{$variable-prefix}warning);
+}
+
+.outline-danger {
+    background-color: transparent;
+    border: 1px solid var(--#{$variable-prefix}danger);
+}

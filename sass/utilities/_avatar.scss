@@ -1,0 +1,126 @@
+%avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+%initial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+// Avatar
+
+.avatar-circle-xs {
+    width: 30px;
+    height: 30px;
+    @extend %avatar;
+}
+
+.avatar-circle-sm {
+    width: 40px;
+    height: 40px;
+    @extend %avatar;
+}
+
+.avatar-circle-md {
+    width: 60px;
+    height: 60px;
+    @extend %avatar;
+}
+
+.avatar-circle-lg {
+    width: 80px;
+    height: 80px;
+    @extend %avatar;
+}
+
+.avatar-circle-xl {
+    width: 100px;
+    height: 100px;
+    @extend %avatar;
+}
+
+.avatar-circle-xxl {
+    width: 120px;
+    height: 120px;
+    @extend %avatar;
+}
+
+// Initial
+
+.initial-circle-xs {
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    @extend %initial;
+}
+
+.initial-circle-sm {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    @extend %initial;
+}
+
+.initial-circle-md {
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    @extend %initial;
+}
+
+.initial-circle-lg {
+    font-size: 21px;
+    width: 80px;
+    height: 80px;
+    @extend %initial;
+}
+
+.initial-circle-xl {
+    font-size: 26px;
+    width: 100px;
+    height: 100px;
+    @extend %initial;
+}
+
+.initial-circle-xxl {
+    font-size: 32px;
+    width: 120px;
+    height: 120px;
+    @extend %initial;
+}
+
+// Iconize
+.icon {
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 60px;
+    }
+}
+
+%icon-box {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    @extend %icon-box;
+}
+
+.icon-box-md {
+    width: 70px;
+    height: 70px;
+    @extend %icon-box;
+}

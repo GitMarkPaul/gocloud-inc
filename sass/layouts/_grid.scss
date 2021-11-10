@@ -1,0 +1,58 @@
+.cols-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+// Column
+
+.column-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    width: 100%;
+} 
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+
+    @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+
+@media (max-width: 576px) {
+    .column-sm-2 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+.column-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+} 
+
+.column-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+} 
+
+
+.column-5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+} 
+
+// Gutter
+
+.gutter-1 {
+    grid-gap: 1rem;
+}
+
+.gutter-2 {
+    grid-gap: 1.5rem;
+}
+
+.gutter-3 {
+    grid-gap: 3rem;
+}
+

@@ -1,0 +1,62 @@
+.font-extra-bold {
+    font-family: $font-family-extra-bold-sans-serif;
+}
+
+.font-medium {
+    font-family: $font-family-medium-sans-serif;
+}
+
+.font-bold {
+    font-family: $font-family-bold-sans-serif;
+}
+
+.font-xl {
+    font-size: 48px;
+    line-height: 1.2;
+
+    @media (max-width: 576px) {
+        font-size: 40px;
+    }
+}
+
+.font-md {
+    font-size: 40px;
+    line-height: 1.2;
+
+    @media (max-width: 576px) {
+        font-size: 32px;
+    }
+}
+
+.font-subtext {
+    font-size: 18px;
+}
+
+// Icon Font Sizes
+.icon-32 {
+    font-size: 32px;
+}
+
+.icon-24 {
+    font-size: 24px;
+}
+
+.icon-21 {
+    font-size: 21px;
+}
+
+// Text Transform
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// Letter Spacing
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}

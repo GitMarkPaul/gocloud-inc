@@ -1,0 +1,24 @@
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--#{$variable-prefix}dark);
+    z-index: 9;
+}

@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    background: var(--#{$variable-prefix}light);
+    color: var(--#{$variable-prefix}dark);
+    -webkit-text-size-adjust: 100%; 
+    -webkit-tap-highlight-color: rgba(var(--#{$variable-prefix}dark), 0); 
+}
+
+// Typography
+
+%heading {
+    margin-top: 0; // 1
+    margin-bottom: 1rem;
+    font-family: $font-family-bold-sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--#{$variable-prefix}dark);
+}
+
+h1 {
+    @extend %heading;
+    font-size: $h1-font-size;
+}
+
+h2 {
+    @extend %heading;
+    font-size: $h2-font-size;
+}
+
+h3 {
+    @extend %heading;
+    font-size: $h3-font-size;
+}
+
+h4 {
+    @extend %heading;
+    font-size: $h4-font-size;
+}
+
+h5 {
+    @extend %heading;
+    font-size: $h5-font-size;
+}
+
+h6 {
+    @extend %heading;
+    font-size: $h6-font-size;
+}
+
+// Parapgraphs & Texts
+
+span, p, small {
+    color: var(--#{$variable-prefix}dark);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $paragraph-margin-bottom;
+}
+
+// Link
+
+a {
+    text-decoration: none;
+    color: var(--#{$variable-prefix}dark);
+}
+
+// List
+
+ul {
+    list-style: none;
+}
+
+

@@ -1,0 +1,180 @@
+// Gray Color Variation
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Colors
+
+$blue:          #0066ff !default;
+$gray:          #f9fafb !default;
+$green:         #129455 !default;
+$yellow:        #e4c30a !default;
+$red:           #E84B4B !default;
+$white:         #FFFFFF !default;
+
+$colors: (
+    "blue":                     $blue,
+    "gray":                     $gray,
+    "green":                    $green,
+    "yellow":                   $yellow,
+    "red":                      $red,
+    "black":                    $black,
+    "white":                    $white
+) !default;
+
+// Theme Colors
+
+$primary:                       $blue !default;
+$secondary:                     $gray !default;
+$success:                       $green !default;
+$warning:                       $yellow !default;
+$danger:                        $red !default;
+$light:                         $white !default;
+$dark:                          $gray-800 !default;
+
+$theme-colors: (
+    "primary":                  $primary,
+    "secondary":                $secondary,
+    "success":                  $success,
+    "warning":                  $warning,
+    "danger":                   $danger,
+    "light":                    $light,
+    "dark":                     $dark
+) !default;
+
+// Spacer
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+) !default;
+
+
+// Body
+
+$body-bg:       $light !default;
+$body-color:    $black !default;
+
+// Typography
+
+$font-family-sans-serif:        'Inter Regular', sans-serif !default;
+$font-family-light-sans-serif:        'Inter Light', sans-serif !default;
+$font-family-medium-sans-serif:        'Inter Medium', sans-serif !default;
+$font-family-semi-bold-sans-serif:        'Inter Semi Bold', sans-serif !default;
+$font-family-bold-sans-serif:        'Inter Bold', sans-serif !default;
+$font-family-extra-bold-sans-serif:        'Inter Extra Bold', sans-serif !default;
+
+// Font, line-height
+
+// $font-size-root:                null !default;
+$font-size-base:                1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                  $font-size-base * .875 !default;
+$font-size-lg:                  $font-size-base * 1.25 !default;
+
+$font-weight-lighter:           lighter !default;
+$font-weight-light:             300 !default;
+$font-weight-normal:            400 !default;
+$font-weight-bold:              600 !default;
+$font-weight-bolder:            bolder !default;
+
+$font-weight-base:              $font-weight-normal !default;
+
+$line-height-base:              1.5 !default;
+$line-height-sm:                1.25 !default;
+$line-height-lg:                2 !default;
+
+$h1-font-size:                  $font-size-base * 2.5 !default;
+$h2-font-size:                  $font-size-base * 2 !default;
+$h3-font-size:                  $font-size-base * 1.75 !default;
+$h4-font-size:                  $font-size-base * 1.5 !default;
+$h5-font-size:                  $font-size-base * 1.25 !default;
+$h6-font-size:                  $font-size-base !default;
+
+// Paragraphs
+
+$paragraph-margin-bottom:       1rem !default;
+
+// Buttons
+
+$btn-padding-xl:                24px 56px !default;
+$btn-padding-lg:                16px 40px !default;
+$btn-padding-md:                14px 32px !default;
+$btn-padding-sm:                8px 16px !default;
+$btn-padding-default:           12px 24px !default;
+$btn-border-radius:             6px !default;
+$btn-rounded:                   24px !default;
+$btn-box-shadow:                rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px !default;
+$btn-font-size:                 14px !default;
+$btn-font-weight:               400 !default;
+
+// Cards
+
+$card-border-radius:    12px !default;
+
+// Inputs
+
+$input-bg: $gray-100 !default;
+$input-border-radius: 6px !default;
+$input-border-color: $gray-400 !default;
+$input-box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !default;
+$input-text-color: $gray-700 !default;
+$input-focus-border-color: tint-color($gray-600, 50%) !default;
+$input-focus-bg: $white !default;
+$input-transition: 2ms ease-in-out !default;
+
+// Navbar
+
+$navbar-padding-y: $spacer * .5 !default;
+$navbar-padding-x: null !default;
+
+// Prefix for :root CSS variables
+
+$variable-prefix:               cx- !default;
+
+// Options
+
+$enable-button-pointers:        true !default;
+
+// Fonts
+
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('../../fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Light';
+    src: url('../../fonts/Inter-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Medium';
+    src: url('../../fonts/Inter-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Semi Bold';
+    src: url('../../fonts/Inter-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('../../fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter Extra Bold';
+    src: url('../../fonts/Inter-ExtraBold.ttf');
+}

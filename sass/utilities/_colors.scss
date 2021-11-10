@@ -1,0 +1,44 @@
+@each $color, $value in $theme-colors {
+    .#{$color} {
+        background-color: $value;
+        @if($color != "warning") {
+            color:$light;
+        }
+    }
+}
+
+.primary-accent {
+    background-color: #e8effb !important;
+    color: var(--#{$variable-prefix}primary) !important;
+}
+
+.success-accent {
+    background-color: #d3f9e6 !important;
+    color: var(--#{$variable-prefix}success) !important;
+}
+
+.warning-accent {
+    background-color: #f7eebe !important;
+    color: #7a6a0d !important;
+}
+
+.danger-accent {
+    background-color: #ffe5e5 !important;
+    color: var(--#{$variable-prefix}danger) !important;
+}
+
+.text-primary {
+    color: var(--#{$variable-prefix}primary);
+}
+
+.text-dark {
+    color: var(--#{$variable-prefix}dark);
+}
+
+.text-gray-600 {
+    color: $gray-600;
+}
+
+.text-white {
+    color: var(--#{$variable-prefix}light);
+}

@@ -1,0 +1,18 @@
+footer {
+    .footer-bottom {
+        font-size: 14px;
+        padding: 12px;
+
+        .footer-copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: 576px) {
+                display: grid;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

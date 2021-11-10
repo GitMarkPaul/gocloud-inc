@@ -1,0 +1,12 @@
+:root {
+    
+    @each $color, $value in $colors {
+        --#{$variable-prefix}#{$color}: #{$value};
+    }
+
+    @each $color, $value in $theme-colors {
+        --#{$variable-prefix}#{$color}: #{$value};
+    }
+
+    --body-font-family: 'Open sans', sans-serif;
+}

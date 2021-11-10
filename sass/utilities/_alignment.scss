@@ -1,0 +1,27 @@
+// Justify
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+// Align Items
+
+.align-items-center {
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .justify-items-center-m {
+        justify-items: center;
+    }
+}
+
+// Text Align
+
+.text-center {
+    text-align: center;
+}
