@@ -39,31 +39,27 @@ body {
 
 @font-face {
   font-family: 'Inter Regular';
-  src: url("../../fonts/Inter-Regular.ttf");
+  src: url("../fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Inter Extra Bold';
-  font-weight: 800;
-  src: url("../../fonts/Inter-ExtraBold.ttf");
+  src: url("../fonts/Inter-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: 'Inter Bold';
-  font-weight: 700;
-  src: url("../../fonts/Inter-Bold.ttf");
+  src: url("../fonts/Inter-Bold.ttf");
 }
 
 @font-face {
   font-family: 'Inter Semi Bold';
-  font-weight: 600;
-  src: url("../../fonts/Inter-SemiBold.ttf");
+  src: url("../fonts/Inter-SemiBold.ttf");
 }
 
 @font-face {
   font-family: 'Inter Medium';
-  font-weight: 500;
-  src: url("../../fonts/Inter-Medium.ttf");
+  src: url("../fonts/Inter-Medium.ttf");
 }
 
 h1, h2, h3, h4, h5, h6 {
