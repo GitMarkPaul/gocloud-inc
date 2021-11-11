@@ -28,23 +28,28 @@ body {
 
 @font-face {
     font-family: 'Inter Extra Bold';
+    font-weight: 800;
     src: url('../../fonts/Inter-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: 'Inter Bold';
+    font-weight: 700;
     src: url('../../fonts/Inter-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Inter Medium';
-    src: url('../../fonts/Inter-Medium.ttf');
+    font-family: 'Inter Semi Bold';
+    font-weight: 600;
+    src: url('../../fonts/Inter-SemiBold.ttf');
 }
 
 @font-face {
-    font-family: 'Inter Semi Bold';
-    src: url('../../fonts/Inter-SemiBold.ttf');
+    font-family: 'Inter Medium';
+    font-weight: 500;
+    src: url('../../fonts/Inter-Medium.ttf');
 }
+
 
 
 // Typography
