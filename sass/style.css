@@ -357,6 +357,11 @@ ul {
   padding: 100px;
 }
 
+.padding-bt-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .padding-bt-100 {
   padding-top: 100px;
   padding-bottom: 100px;
