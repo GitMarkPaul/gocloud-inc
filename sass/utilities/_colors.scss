@@ -47,3 +47,7 @@
 .text-white {
     color: var(--#{$variable-prefix}light);
 }
+
+.bg-transparent {
+    background-color: transparent;
+}

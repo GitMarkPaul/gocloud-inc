@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let header = document.getElementById('header');
     let menu = document.getElementById('menu');
+    let close = document.getElementById('close');
     let body = document.getElementsByTagName('body')[0];
     let navbarMenu = document.getElementById('navbar-menu');
     window.onscroll = () => { stickyHeader() }
@@ -28,6 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navbarMenu.style.display = 'none';
         } else {
             navbarMenu.style.display = "block";
+        }
+    })
+
+    close.addEventListener('click', () => {
+        if (navbarMenu.style.display === "none") 
+        {
+            navbarMenu.style.display = 'block';
+        } else {
+            navbarMenu.style.display = "none";
         }
     })
 

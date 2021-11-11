@@ -480,6 +480,10 @@ ul {
   color: var(--cx-light);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .justify-content-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -620,6 +624,11 @@ ul {
   }
 }
 
+.shadow-none {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .outline-primary {
   background-color: transparent;
   border: 1px solid var(--cx-primary);
@@ -657,6 +666,7 @@ ul {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 12px;
+  border: none;
   --padding: 24px;
 }
 
@@ -880,6 +890,19 @@ ul {
   height: 80px;
 }
 
+.navbar #close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .navbar #close {
+    display: block;
+  }
+}
+
 .navbar #menu {
   display: none;
 }
@@ -913,6 +936,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: scale-in-ver-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-ver-top 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media (max-width: 576px) {
@@ -965,6 +990,45 @@ ul {
   border-bottom: 1px solid #e9ecef;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-ver-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    opacity: 1;
+  }
 }
 
 .cta-center {
