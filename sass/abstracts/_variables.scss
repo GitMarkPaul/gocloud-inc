@@ -69,7 +69,7 @@ $body-color:    $black !default;
 
 // Typography
 
-$font-family-sans-serif:        'Inter', sans-serif !default;
+$font-family-sans-serif:        'Inter', sans-serif !important;
 
 // Font, line-height
 
@@ -133,6 +133,10 @@ $input-transition: 2ms ease-in-out !default;
 
 $navbar-padding-y: $spacer * .5 !default;
 $navbar-padding-x: null !default;
+
+// Link
+
+$text-decoration-none: none !default;
 
 // Prefix for :root CSS variables
 

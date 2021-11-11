@@ -1,8 +1,13 @@
 @each $color, $value in $theme-colors {
-    .#{$color} {
-        background-color: $value;
-        @if($color != "warning") {
-            color:$light;
+    @if($color == "warning") {
+        .#{$color} {
+            background-color: $value;
+            color: $gray-600;
+        }
+    } @else {
+        .#{$color} {
+            background-color: $value;
+            color: $white;
         }
     }
 }

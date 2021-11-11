@@ -46,12 +46,11 @@
 
         .navbar-item {
             position: relative;
-            font-weight: 500;
             font-size: 16px;
-
+            
             @media (max-width: 576px) {
                 margin-top: 1.5rem;
-
+                
                 &:nth-child(1) {
                     margin-top: 0;
                 }
@@ -60,9 +59,9 @@
 
         .active {
             font-weight: 600;
-            color: var(--#{$variable-prefix}primary);
+            color: var(--#{$variable-prefix}primary) !important;
             border-bottom: 3px solid var(--#{$variable-prefix}primary);
-            padding-bottom: 14px;
+            padding-bottom: 12px;
         }
     }
 

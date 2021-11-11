@@ -14,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Roboto:wght@400;500;700&amp;display=swap">
-    <!-- CSS -->
-    <link rel="stylesheet" href="sass/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
@@ -26,17 +28,12 @@
                 <a href="index.html" class="brand">
                     Gocloud
                 </a>
-                <ul class="navbar-menu gutter-3 padding-none" id="navbar-menu">
+                <ul class="navbar-menu gutter-3 p-0 m-0" id="navbar-menu">
                     <li class="navbar-item"><a href="#" class="active">Home</a></li>
                     <li class="navbar-item"><a href="#about">About Us</a></li>
                     <li class="navbar-item"><a href="#solutions">Solutions</a></li>
                     <li class="navbar-item"><a href="#contact">Contact Us</a></li>
                 </ul>
-                <div class="display-flex gutter-2 social-media">
-                    <a href=""><i class="bi bi-facebook icon-21"></i></a>
-                    <a href=""><i class="bi bi-twitter icon-21"></i></a>
-                    <a href=""><i class="bi bi-linkedin icon-21"></i></a>
-                </div>
                 <button type="button" class="button sm" id="menu"><i class="bi bi-list icon-24"></i></button>
             </nav>
         </div>
@@ -45,24 +42,33 @@
     <main>
         <section class="padding-bt-150 dot-overlay">
             <div class="container">
-                <div class="display-grid justify-items-center text-center">
-                    <span class="font-extra-bold font-xl">Enable your business with tools <br> <span class="text-primary">to access data when you need it.</span></span>
-                    <p class="font-subtext margin-t-2">Having cloud based systems positions your company to be at the forefront of efficient use of your data resources.</p>
+                <div class="row row-cols-1 justify-content-center text-center">
+                    <div class="col">
+                        <span class="font-extra-bold font-xl">Enable your business with tools <br> <span class="text-primary">to access data when you need it.</span></span>
+                        <p class="font-subtext margin-t-2">Having cloud based systems positions your company to be at the forefront of efficient use of your data resources.</p>
+                    </div>
 
-                    <div class="display-flex display-m-grid gutter-1 margin-t-2">
-                        <a href="#contact" class="button primary lg">Get started</a>
-                        <a href="#solutions" class="button primary-accent lg">Our Solutions</a>
+                    <div class="col">
+                        <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-1 g-3 justify-content-center margin-t-2">
+                            <div class="col">
+                                <a href="#contact" class="button primary block lg text-white">Get started</a>
+                            </div>
+                            <div class="col">
+                                <a href="#solutions" class="button primary-accent block lg">Our Solutions</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <section class="padding-bt-100 primary-accent">
             <div class="container">
-                <div class="display-grid gutter-2 margin-t-1 margin-b-1">
-                    <div class="column-3 gutter-2"> 
-                        <div class="cx-card text-center">
+                <div class="row row-cols-xl-3 row-cols-1 justify-content-center g-4">
+                    <div class="col">
+                        <div class="cx-card h-100 text-center">
                             <div class="body">
-                                <div class="display-grid justify-items-center">
+                                <div class="d-grid justify-items-center">
                                     <div class="icon-box-md primary-accent margin-b-1">
                                         <i class="bi bi-globe icon-32"></i>
                                     </div>
@@ -71,18 +77,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cx-card text-center">
+                    </div>
+                    <div class="col">
+                        <div class="cx-card h-100 text-center">
                             <div class="body">
                                 <div class="display-grid justify-items-center">
                                     <div class="icon-box-md success-accent margin-b-1">
                                         <i class="bi bi-wrench icon-32"></i>
                                     </div>
-                                    <h4 class="title">Solutions</h4>
-                                    <p class="text">Creating tools to solve the challenges of your business’ everyday operations.</p>
+                                    <h4 class="title">Innovation</h4>
+                                    <p class="text">Transforming our company, services, and products with the ever changing industry terrain.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cx-card text-center">
+                    </div>
+                    <div class="col">
+                        <div class="cx-card h-100 text-center">
                             <div class="body">
                                 <div class="display-grid justify-items-center">
                                     <div class="icon-box-md warning-accent margin-b-1">
@@ -111,33 +121,32 @@
 
         <section class="padding-bt-100 secondary" id="solutions">
             <div class="container">
-                <div class="display-grid gutter-1 text-center">
+                <div class="d-grid gutter-1 text-center">
                     <div class="font-bold text-primary uppercase letter-space-1">Solutions</div>
                     <span class="font-extra-bold font-md">Harnessing Cloud Based Technologies</span>
                     <span class="text-gray-600 font-subtext">Providing you with systems to process industry relevant data</span>
                 </div>
-                <div class="column-4 gutter-3 margin-t-5">
-
-                    <div class="display-grid">
+                <div class="row row-cols-xl-4 row-cols-lg-3 g-5 mt-5">
+                    <div class="col">
                         <a href="https://academecloud.com/" target="_blank" rel="noopener noreferrer">
-                            <div class="cx-card">
-                                <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-academe-sms.png" width="150" alt="">
                                     </div>
                                 </div>
                             </div>
                         </a>
-                        <div class="display-grid text-center">
+                        <div class="d-grid text-center">
                             <span class="font-bold margin-t-1">Academe SMS</span>
                             <span>School Management System</span>
                         </div>
                     </div> 
-
-                    <div class="display-grid">
+                    
+                    <div class="col">
                         <div class="cx-card">
                             <div class="body">
-                                <div class="display-grid justify-items-center text-center">
+                                <div class="d-grid justify-items-center text-center">
                                     <img src="media/products/logo-academe-lms.png" width="150" alt="">
                                 </div>
                             </div>
@@ -148,11 +157,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://businessmonitoringsystem.cloud/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-cloudbiz-bms.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -164,11 +173,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://medisynchealth.com/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-medisync-cmr.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -180,11 +189,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://yourcloudshop.com/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-cloudshop.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -196,11 +205,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://offshoreoffice360.com/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-offshore-office-360.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -212,11 +221,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://trietrade.com/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-trietrade.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -228,11 +237,11 @@
                         </div>
                     </div> 
 
-                    <div class="display-grid">
+                    <div class="col">
                         <a href="https://synthesisgroup.co/" target="_blank" rel="noopener noreferrer">
                             <div class="cx-card">
                                 <div class="body">
-                                    <div class="display-grid justify-items-center text-center">
+                                    <div class="d-grid justify-items-center text-center">
                                         <img src="media/products/logo-synthesis-group.png" width="150" alt="">
                                     </div>
                                 </div>
@@ -248,112 +257,64 @@
             </div>
         </section>
 
-        <section class="padding-bt-100">
+        <section class="padding-bt-100 dot-overlay" id="contact">
             <div class="container">
-                <div class="display-grid gutter-1 text-center">
-                    <div class="font-bold text-primary uppercase letter-space-1">Articles</div>
-                    <span class="font-extra-bold font-md">From the Blogs</span>
-                    <span class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                </div>
-                <div class="column-3 gutter-2 margin-t-5"> 
-                    <div class="cx-card">
-                        <img src="media/news/news-1.jpg" class="thumbnail" alt="">
-                        <div class="body">
-                            <span class="badge primary-accent round">Article</span>
-                            <h4 class="title">Boost your conversion rate</h4>
-                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus dolore inventore sapiente rerum ab iusto. Blanditiis neque...</p>
-                        </div>
-                        <div class="footer">
-                            <div class="display-flex-center">
-                                <img src="media/avatar/avatar.jpg" class="avatar-circle-sm" alt="">
-                                <div class="display-grid margin-l-1">
-                                    <span class="author">Daniele Mitz</span>
-                                    <span class="date">Mar 16, 2021</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cx-card">
-                        <img src="media/news/news-2.jpg" class="thumbnail" alt="">
-                        <div class="body">
-                            <span class="badge success-accent round">Case Study</span>
-                            <h4 class="title">How to use search engine optimization to drive sales</h4>
-                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus dolore inventore sapiente rerum ab iusto. Blanditiis neque...</p>
-                        </div>
-                        <div class="footer">
-                            <div class="display-flex-center">
-                                <img src="media/avatar/avatar-2.jpg" class="avatar-circle-sm" alt="">
-                                <div class="display-grid margin-l-1">
-                                    <span class="author">Roel Aufdeerehar</span>
-                                    <span class="date">Dec 4, 2018</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cx-card">
-                        <img src="media/news/news-3.jpg" class="thumbnail" alt="">
-                        <div class="body">
-                            <span class="badge danger-accent round">Blog</span>
-                            <h4 class="title">Improve your customer experience</h4>
-                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatibus dolore inventore sapiente rerum ab iusto. Blanditiis neque...</p>
-                        </div>
-                        <div class="footer">
-                            <div class="display-flex-center">
-                                <img src="media/avatar/avatar-3.jpg" class="avatar-circle-sm" alt="">
-                                <div class="display-grid margin-l-1">
-                                    <span class="author">Brenna Goyette</span>
-                                    <span class="date">Apr 34, 2016</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="padding-bt-100 secondary dot-overlay" id="contact">
-            <div class="container">
-                <div class="display-grid gutter-1 text-center">
+                <div class="d-grid gutter-1 text-center">
                     <div class="font-bold text-primary uppercase letter-space-1">Contact Us</div>
                     <span class="font-extra-bold font-md">Keep in Touch</span>
                     <span class="text-gray-600">We would love to hear from you!</span>
                 </div>
-                <div class="column-1 gutter-2 margin-t-5"> 
-                    <div class="cx-card padding-20">
-                        <div class="body">
-                            <form>
-                                <div class="display-grid gutter-2">
-                                    <div class="column-2 gutter-2">
-                                        <div class="group">
-                                            <label for="name" class="label">Full Name</label>
-                                            <input type="text" class="input" required>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="col-xl-7"> 
+                        <div class="cx-card">
+                            <div class="body">
+                                <form>
+                                    <div class="row row-cols-1 g-4">
+                                        <div class="col">
+                                            <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 g-4">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="name" class="form-label">Full Name</label>
+                                                        <input type="text" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="email" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="group">
-                                            <label for="email" class="label">Email</label>
-                                            <input type="email" class="input" required>
+                                        <div class="col">
+                                            <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 g-4">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="phone" class="form-label">Contact Number</label>
+                                                        <input type="tel" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label for="subject" class="form-label">Subject</label>
+                                                        <input type="text" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="message" class="form-label">Message</label>
+                                                <textarea class="form-control" cols="30" rows="3" required></textarea>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="display-flex justify-content-center margin-t-2">
+                                        <button type="submit" class="button dark md" >Submit</button>
                                     </div>
-                                    <div class="column-2 gutter-2">
-                                        <div class="group">
-                                            <label for="phone" class="label">Contact Number</label>
-                                            <input type="tel" class="input" required>
-                                        </div>
-                                        <div class="group">
-                                            <label for="subject" class="label">Subject</label>
-                                            <input type="text" class="input" required>
-                                        </div>
-                                    </div>
-                                    <div class="group">
-                                        <label for="message" class="label">Message</label>
-                                        <textarea class="input" cols="30" rows="3" required></textarea>
-                                    </div>
-                                </div> 
-                                <div class="display-flex justify-content-center margin-t-2">
-                                    <button type="submit" class="button dark md" >Submit</button>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -395,7 +356,7 @@
             <div class="footer-bottom">
                 <div class="footer-copyright">
                     <span class="text-gray-600">Copyright &copy; 2021 Gocloud Incorporated. All Rights Reserved.</span>
-                    <ul class="display-flex justify-content-center padding-none">
+                    <ul class="d-flex justify-content-center m-0 p-0">
                         <li><a href="" class="text-gray-600">Terms & Conditions</a></li>
                         <li><a href="" class="text-gray-600 margin-l-1">Privacy Policy</a></li>
                     </ul>
@@ -404,33 +365,6 @@
         </div>
     </footer>
 
-    <script lang="text/javascript">
-        document.addEventListener('DOMContentLoaded', () => {
-            let header = document.getElementById('header');
-            let menu = document.getElementById('menu');
-            let body = document.getElementsByTagName('body')[0];
-            let navbarMenu = document.getElementById('navbar-menu');
-            window.onscroll = () => { stickyHeader() }
-
-            // Header Fixed
-            function stickyHeader() {
-                if (window.pageYOffset > 0) {
-                    header.classList.add('fixed-top')
-                } else {
-                    header.classList.remove('fixed-top')
-                }
-                
-            }
-
-            menu.addEventListener('click', () => {
-                if (navbarMenu.style.display === "block") 
-                {
-                    navbarMenu.style.display = 'none';
-                } else {
-                    navbarMenu.style.display = "block";
-                }
-            })
-        });
-    </script>
+    <script lang="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
