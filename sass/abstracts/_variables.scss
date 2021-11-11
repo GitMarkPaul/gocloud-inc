@@ -69,7 +69,11 @@ $body-color:    $black !default;
 
 // Typography
 
-$font-family-sans-serif:        'Inter', sans-serif !important;
+$font-family-sans-serif:        'Inter Regular', sans-serif !default;
+$font-family-extra-bold:        'Inter Extra Bold', sans-serif !default;
+$font-family-bold:        'Inter Bold', sans-serif !default;
+$font-family-medium:        'Inter Mediumn', sans-serif !default;
+$font-family-semi-bold:        'Inter Semi Bold', sans-serif !default;
 
 // Font, line-height
 
