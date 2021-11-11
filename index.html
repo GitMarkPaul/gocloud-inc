@@ -26,10 +26,11 @@
         <div class="container">
             <nav class="navbar">
                 <a href="index.html" class="brand">
+                    <img src="media/logo.png" alt="">
                     Gocloud
                 </a>
                 <ul class="navbar-menu gutter-3 p-0 m-0" id="navbar-menu">
-                    <li class="navbar-item"><a href="#" class="active">Home</a></li>
+                    <li class="navbar-item"><a href="#">Home</a></li>
                     <li class="navbar-item"><a href="#about">About Us</a></li>
                     <li class="navbar-item"><a href="#solutions">Solutions</a></li>
                     <li class="navbar-item"><a href="#contact">Contact Us</a></li>
@@ -271,20 +272,20 @@
                     <div class="col-xl-7"> 
                         <div class="card">
                             <div class="card-body">
-                                <form>
+                                <form method="POST" id="contact-form" name="form-validate">
                                     <div class="row row-cols-1 g-4">
                                         <div class="col">
                                             <div class="row row-cols-xl-2 row-cols-md-2 row-cols-1 g-4">
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="name" class="form-label">Full Name</label>
-                                                        <input type="text" class="form-control" required>
+                                                        <input type="text" name="fullname" id="fullname" class="form-control" autofocus required>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="email" class="form-label">Email</label>
-                                                        <input type="email" class="form-control" required>
+                                                        <input type="email" name="email" id="email" class="form-control" autofocus required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -294,13 +295,13 @@
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="phone" class="form-label">Contact Number</label>
-                                                        <input type="tel" class="form-control" required>
+                                                        <input type="tel" name="phone" id="phone" class="form-control" required>
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
                                                         <label for="subject" class="form-label">Subject</label>
-                                                        <input type="text" class="form-control" required>
+                                                        <input type="text" name="subject" id="subject" class="form-control" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -308,12 +309,12 @@
                                         <div class="col">
                                             <div class="form-group">
                                                 <label for="message" class="form-label">Message</label>
-                                                <textarea class="form-control" cols="30" rows="3" required></textarea>
+                                                <textarea name="message" id="message" class="form-control" cols="30" rows="3" required></textarea>
                                             </div>
                                         </div>
                                     </div> 
                                     <div class="display-flex justify-content-center margin-t-2">
-                                        <button type="submit" class="button dark md" >Submit</button>
+                                        <button type="submit" class="button dark md" id="submitBtn">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -327,30 +328,34 @@
             <div class="container">
                 <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-sm-2 row-cols-1 g-4">
                     <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="display-grid justify-items-center">
-                                    <div class="icon-box-md primary margin-b-1">
-                                        <i class="bi bi-envelope-fill icon-32"></i>
+                        <a href="mailto:info@gocloudgroup.com">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="display-grid justify-items-center">
+                                        <div class="icon-box-md primary margin-b-1">
+                                            <i class="bi bi-envelope-fill icon-32"></i>
+                                        </div>
+                                        <span class="font-bold">Email Address</span>
+                                        <span class="text-gray-600">info@gocloudgroup.com</span>
                                     </div>
-                                    <span class="font-bold">Email Address</span>
-                                    <span class="text-gray-600">info@gocloudgroup.com</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div> 
                     <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="display-grid justify-items-center">
-                                    <div class="icon-box-md primary margin-b-1">
-                                        <i class="bi bi-telephone-fill icon-32"></i>
+                        <a href="tel:+63454551040">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="display-grid justify-items-center">
+                                        <div class="icon-box-md primary margin-b-1">
+                                            <i class="bi bi-telephone-fill icon-32"></i>
+                                        </div>
+                                        <span class="font-bold">Telephone</span>
+                                        <span class="text-gray-600">+6345-455-1040</span>
                                     </div>
-                                    <span class="font-bold">Telephone</span>
-                                    <span class="text-gray-600">+6345-455-1040</span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -371,6 +376,10 @@
         </div>
     </footer>
 
-    <script lang="text/javascript" src="js/scripts.js"></script>
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
