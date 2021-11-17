@@ -33,7 +33,7 @@ body {
   line-height: 1.5;
   background: var(--cx-light);
   color: var(--cx-dark);
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none !important;
   -webkit-tap-highlight-color: rgba(var(--cx-dark), 0);
 }
 
@@ -824,7 +824,7 @@ ul {
 }
 
 .dot-overlay {
-  background: url("https://gocloudgroup.com/images/bg-dot.png");
+  background: url("../media/bg-dot.png");
   background-size: 10px;
 }
 
