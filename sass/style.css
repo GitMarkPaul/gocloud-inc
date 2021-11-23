@@ -998,7 +998,7 @@ ul {
 }
 
 .navbar .navbar-menu .active {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--cx-primary) !important;
   border-bottom: 3px solid var(--cx-primary);
   padding-bottom: 12px;
